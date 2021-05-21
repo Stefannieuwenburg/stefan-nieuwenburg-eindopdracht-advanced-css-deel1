@@ -1,0 +1,94 @@
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap");
+@import "./variables";
+* {
+	box-sizing: border-box;
+
+	font-family: "Roboto Condensed", sans-serif;
+}
+
+body {
+	background-color: $grijs;
+}
+
+.box-container {
+	height: 550px;
+	width: 400px;
+	margin: 40px auto;
+	background-color: $wit;
+	border-radius: 30px;
+	box-shadow: 0px 10px 7px 0px rgba($color: #000000, $alpha: 0.5);
+	display: flex;
+	flex-direction: column;
+
+	.footer {
+		background-color: $paarsblauw;
+		border-bottom-left-radius: 28px;
+		border-bottom-right-radius: 28px;
+		width: 100%;
+		height: 30%;
+		position: relative;
+	}
+
+	.foto {
+		width: 150px;
+		height: auto;
+		position: absolute;
+		top: -75px;
+		right: 125px;
+	}
+
+	.texthouder {
+		height: 70%;
+	}
+
+	.text {
+		padding: 50px 40px;
+		font-weight: lighter;
+		font-stretch: ultra-condensed;
+		line-height: 1.4em;
+	}
+
+	.naam {
+		text-align: center;
+		color: #fff;
+		margin-top: 75px;
+		font-size: 1.4em;
+		margin-bottom: 0;
+	}
+
+	.website {
+		text-align: center;
+		color: #c3cfe2;
+		font-size: 1.2em;
+		margin-top: 5px;
+	}
+}
+
+@media only screen and (min-width: 1024px) {
+	.box-container {
+		height: 1100px;
+		width: 800px;
+		box-shadow: 0px 20px 14px 0px rgba($color: #000000, $alpha: 0.5);
+
+		.foto {
+			width: 300px;
+			top: -150px;
+			right: 250px;
+		}
+
+		.text {
+			padding: 100px 80px;
+			font-size: 3em;
+		}
+
+		.naam {
+			margin-top: 150px;
+			font-size: 2.8em;
+		}
+
+		.website {
+			font-size: 2.4em;
+		}
+	}
+}
